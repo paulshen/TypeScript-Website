@@ -46,8 +46,6 @@ languages.forEach((lang) => {
       errorReports.push({ path: optionPath, error });
     }
 
-    // const optionFile = read(optionPath);
-
     const sigil = hasError ? cross : tick;
     const name = hasError ? chalk.red(option) : option;
     const miniPath = name.replace(join(__dirname, "..", "copy"), "");
